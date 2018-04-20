@@ -1,0 +1,432 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    background-color: #dddddd;
+    background-image: linear-gradient(#f1f1f1, #dddddd);
+    background-repeat: repeat-x;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #dddddd #cccccc #cccccc #dddddd;
+    border-image: none;
+    border-style: solid;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}</style>
+</head>
+<body>
+<h1 id="L.........................................................1">临床医学检验技术（师）专业相关专业知识1</h1>
+
+<hr />
+
+<ol>
+<li>WHO推荐的婴幼儿毛细血管采血部位为：足跟</li>
+<li>加强抗凝血酶III的抗凝剂是： 肝素</li>
+<li>瑞氏染色时，使用缓冲液的目的：维持染色的PH环境</li>
+<li>属于RBC结构异常的是：H-J小体、点彩红细胞、卡波环、寄生虫</li>
+<li>中性粒细胞中毒性变化，提示病情严重时，毒性指数常为：1</li>
+<li>电阻抗法白细胞分类计数依据：细胞大小</li>
+<li>正常止血机制中对血小板作用描述错误的是：减慢或阻断血流</li>
+<li>Rh血型抗原性最强的是：D抗原</li>
+<li>新排出的尿液不出现浑浊的是：大量的葡萄糖</li>
+<li>尿中出现红细胞管型多见于：急性肾小球肾炎</li>
+<li>不能作为早期肾损伤的指标的是：尿IgG （尿微量清蛋白、尿\(\alpha\)1微球蛋白、尿\(\beta\)2微球蛋白、尿N-乙酰-\(\beta\)-D-氨基葡萄糖苷酶可以作为其指标）</li>
+<li>脑脊液中出现薄膜、凝块或沉淀时，脑脊液中蛋白质含量应超过：10g/L</li>
+<li>红细胞膜变形起主要作用的是：收缩蛋白</li>
+<li>正常的骨髓象特征：有核细胞增生活跃、粒红比值2~4:1，可见少量网状细胞和肥大细胞、原粒细胞&lt;2%，早幼粒细胞&lt;5%(原始淋巴细胞及其罕见)</li>
+<li>正常人血红蛋白包括：HbA\HbA2\HbF\Hb Gowerl（HbH不是）</li>
+<li>成熟红细胞的寿命为：120day</li>
+<li>造血必需的营养物质是：铁、维生素B12、叶酸、蛋白质（锌不是）</li>
+<li>可转化为巨噬细胞的是：单核细胞</li>
+<li>多发性骨髓瘤实验室改变：高尿酸血症，高钙血症，高粘稠血症，碱性磷酸酶增高（没有高白蛋白血症）</li>
+<li>诊断淋巴瘤最重要的实验室诊断依据是：淋巴结病理切片检查</li>
+<li>对骨髓纤维化最有诊断价值的检查是：骨髓活检病理学检查</li>
+<li>肾上腺素实验和运动实验反应粒细胞：分布情况</li>
+<li>过氧化物酶染色在空气中最终变为：棕黑色（急粒白血病多呈阳性，急性单核细胞白血病弱阳，急淋阴性）</li>
+<li>与GPIIb/IIIa复合物相关的血小板功能是：凝聚功能</li>
+<li>血块收缩时反应血小板的：肌动蛋白和肌球蛋白相互作用</li>
+<li>血浆胆固醇水平不能反应：人体内类固醇激素的分泌情况</li>
+<li>参与胆固醇的逆向转运的脂蛋白是：HDL</li>
+<li>关于载脂蛋白的功能：1.构成并稳定载脂蛋白的结构 2.影响与脂蛋白代谢有关的酶的活性 3.作为配体识别脂蛋白受体4.几种载脂蛋白在血浆中水平的高低可以反映冠心病的危险性 （其在血浆中水平的高低并不能用于诊断糖尿病的并发症）</li>
+<li>可使血糖浓度下降的激素是：胰岛素</li>
+<li>血糖的去路：1.糖酵解 2.有氧氧化 3.合成糖原 4.磷酸戊糖途径 （不包括通过尿液排出）</li>
+<li>血浆蛋白在肝脏合成的是：ALB\AMG\TRP\AFP（免疫球蛋白不再肝脏合成，由淋巴细胞合成）</li>
+<li>受酒精诱导其合成增加的是：GGT（谷氨酰转肽酶）</li>
+<li>对肾脏调节酸碱平衡作用描述不正确的是：近端小管排泄H+（远端小管排泄H+ 2. 近端小管重吸收HCO3- 3.远端小管和集合管Na+-K+交换 4. 远端小管排泄氨 5.远端小管和集合管Na+-H+交换）</li>
+<li>血缓冲系统中缓冲能力最强的是：NaHCO3/H2CO3</li>
+<li>血中非蛋白含氮物质中最主要的是：肝脏经鸟氨酸循环产生的尿素</li>
+<li>钙在体内参与许多重要的生理功能，但除外：增强肌肉的兴奋性</li>
+<li>肝脏功能严重受损时，不可能出现的情况是：生物转化作用加强</li>
+<li>心肌梗死时血清LD同工酶升高最明显的是：LD1</li>
+<li>光谱分析中基于吸收光谱分析的方法有：紫外、可见光分光光度法</li>
+<li>在单位电场强度下，带电粒子的移动速度称为：电泳迁移率</li>
+<li>脂蛋白密度由低到高顺序排列：CM,VLDL,LDL,HDL</li>
+<li>酶活性即酶促反应速度，指在规定条件下，单位时间内测定底物的减少量或（产物）的生成量</li>
+<li>生物转化的效果是使药物的：极性升高，有利于排泄</li>
+<li>诊断早期妊娠通常测定的激素是： 绒毛膜促性腺激素</li>
+<li>基于抗原抗体反应建立的免疫学技术最重要的特点：高度特异性</li>
+<li>协同凝集试验的致敏载体为：金黄色葡萄球菌</li>
+<li>放射免疫分析最大的缺点是：监测特异性差</li>
+<li>免疫放射分析法与放射免疫分析法的主要区别在于：标记抗体</li>
+<li>用于标记的辣根过氧化物酶，其RZ值应大于：3.0</li>
+<li>PAP复合物中的酶是：辣根过氧化物酶</li>
+<li>影响红细胞生成素产生的因素为：机体内血容量和氧分压</li>
+<li>不属于自身免疫病特征的是：所有患者均能检出高效价自身抗体</li>
+<li>关于类风湿因子的叙述正确的是：抗变性IgG的抗体</li>
+<li>保证检测结果正确、有效的先决条件是：分析前质量保证</li>
+<li>AIDS重要的免疫学特征是：CD4+/CD8+比值倒置</li>
+<li>HLA血清学分型法属于：补体依赖性的细胞毒反应</li>
+<li>不属于肿瘤标志物的是：ENA抗可溶性抗原 Extractable nucler antigen(抗体)的简写（AFP：肝\CEA：多种\PSA：前列腺\CA125：卵巢\CA153:乳腺)</li>
+<li>能特异性杀伤肿瘤细胞的是：CD8+CTL细胞</li>
+<li>室内质量控制：可以提高实验室常规工作批内/批间检验结果的一致性</li>
+<li>细菌进入宿主细胞过程与归宿内容不包括：凋亡（黏附、定植、侵入、转归）</li>
+<li>隐性感染着远超过显性感染的是：结核</li>
+<li>对微生物感染的人工主动免疫方法是给人接种：减毒活疫苗</li>
+<li>能使黏稠脓汁变稀，有利于细菌扩散的侵袭性酶是：DNA酶</li>
+<li>不符合标本采集的一般原则的是：采集的标本越多越好（早期采集、无菌采集、根据目的用不同的方法、安全采集）</li>
+<li>不符合无菌采集的是：采集窦道标本时，在窦道口取标本</li>
+<li>关于影响消毒剂效果的因素，哪种说法错误：表面活性剂对革兰阴性菌的杀菌效果比革兰阳性菌好（表面活性剂作用于细菌细胞膜，而革兰阳性菌与阴性菌的差别在细胞壁，不在细胞膜 。）</li>
+<li>测定动物对病原体的感染性最好选用：无菌动物</li>
+<li>O157:H7不发酵或迟缓发酵：山梨醇</li>
+<li>在麦康凯培养基上形成红色菌落的是：产气肠杆菌</li>
+<li>新生隐球菌的致病物质是：荚膜</li>
+<li>与Koch现象有关的是：结核分枝杆菌</li>
+<li>立克次体生物学特性叙述正确的是：Giemsa染色呈红色，两端浓染</li>
+<li>带虫免疫室宿主感染寄生虫后产生的免疫力：虽不能将重提全部清除，但对重复感染产生一定的免疫力，当虫体全部清除后，这种免疫力会逐渐消失</li>
+<li>寄生虫病流行的三个特点：地方性，季节性，自然疫源性</li>
+<li>溶组织内阿米巴的传染源是：粪便中有包囊排出的带虫者</li>
+<li>正常情况下，不能通过肾小球滤过膜的物质是：血细胞</li>
+<li>正常情况下，原尿中不被肾小管重吸收的物质是：肌酐</li>
+<li>与血小板黏附功能有关的物质是：GPIa/IIa复合物</li>
+<li>与血小板聚集功能有关的物质是：GPIIb/IIIa复合物</li>
+<li>与血小板促凝作用有关的物质是：血小板第3因子</li>
+<li>急性再生障碍性贫血：骨髓增生重度减低</li>
+<li>急性白血病：骨髓增生极度活跃</li>
+<li>血清ACP活性升高：前列腺癌</li>
+<li>血清AST活性升高：急性心肌梗死</li>
+<li>A/G比例倒置：肝硬化</li>
+<li>血清淀粉酶活性升高：急性胰腺炎</li>
+<li>血清AFP升高：原发性肝癌</li>
+<li>提示过敏体质的检测指标是：总IgE水平</li>
+<li>能检出说明过敏原种类的指标是：特异性IgE</li>
+<li>免疫层析技术采用的固相载体是：NC膜</li>
+<li>电化学发光技术采用的固相载体是：磁性微颗粒</li>
+<li>ELISA常用的固相材料为：聚苯乙烯</li>
+<li>乳胶凝集试验的致敏载体为：乳胶颗粒</li>
+<li>流行性感冒病毒核酸特点为分段单负股RNA病毒</li>
+<li>副流感病毒核酸特点为不分段单负股RNA病毒</li>
+<li>腺病毒核酸特点为单一线性双股DNA病毒</li>
+<li>风疹病毒核酸特点为单股正链RNA病毒</li>
+<li>鞭毛使细菌具有化学趋向性</li>
+<li>性菌毛使细菌有致育性</li>
+<li>细菌的黏附器官是普通菌毛</li>
+</ol>
+
+</body>
+</html>
